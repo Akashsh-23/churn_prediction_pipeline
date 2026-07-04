@@ -1,4 +1,3 @@
-# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -6,28 +5,23 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Virtual environments
 .venv/
 venv/
 env/
 
-# Notebook and local runtime noise
 .ipynb_checkpoints/
 .matplotlib/
 .agents/
 .codex/
 .git-ready/
 
-# Local data. Keep folders, not datasets or generated splits.
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
 
-# Trained model artifacts
 models/*
 !models/.gitkeep
 
-# Local secrets/config
 .env
 .env.*

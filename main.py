@@ -129,8 +129,6 @@ python main.py --with-smote
 
 Use `python main.py --no-smote` to compare against the original class distribution.
 
-## Resume Bullet
-Built an end-to-end churn prediction pipeline on 7,043 real customer records (IBM Telco dataset); performed hypothesis testing (chi-square, ANOVA) to identify significant churn drivers, engineered 3+ derived features, and benchmarked Logistic Regression, Random Forest, Decision Tree, and XGBoost using SMOTE for class imbalance, achieving {best['roc_auc']:.1%} ROC-AUC and {best['recall']:.1%} Recall with the best model; used SHAP for interpretability to surface actionable retention drivers.
 """
     (REPORTS_DIR.parent / "README.md").write_text(readme, encoding="utf-8")
 
