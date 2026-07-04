@@ -101,6 +101,7 @@ Customer churn prediction helps retention teams identify customers who are likel
 ## Dataset
 Source: IBM Telco Customer Churn dataset, expected first at `data/raw/Telco-customer-churn.csv`.
 Rows used: 7,043. {dataset_note}
+The raw CSV is not committed to this repository. Add the IBM Telco CSV to `data/raw/` before running the pipeline, or run without it to use the built-in synthetic fallback.
 
 ## Approach
 The pipeline cleans raw customer records, runs EDA and hypothesis tests, engineers derived features, performs stratified train/test splitting, optionally applies SMOTE to the training set, trains four classifiers, evaluates them with churn-focused metrics, and uses SHAP to explain the recommended model.
